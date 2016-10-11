@@ -1,13 +1,3 @@
-# 忽略日志，各种备份文件，内存转储文件
-*.log
-*.DS_Store
-*~
-*.swp 
-core.*
-.build
-*.pyc
-*.bak
-*.out
+# 包含实际信息的配置文件，需要忽略
 
-# 忽略配置文件
 config.py
