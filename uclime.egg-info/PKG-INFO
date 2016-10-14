@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: uclime
+Version: 0.1.8
+Summary: A UCloud Command Line tool base on UCloud api
+Home-page: https://github.com/hsiun/ucli
+Author: hsiun
+Author-email: growdane@gmail.com
+License: MIT
+Description: you can use this tool call the api from Command line
+Keywords: python ucloud api sdk uhost ufile ucli command line
+Platform: UNKNOWN

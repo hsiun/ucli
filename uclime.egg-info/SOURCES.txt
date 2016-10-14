@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+ucli/UCliMain.py
+ucli/UCloudApiClient.py
+ucli/UCloudApiConfig.py
+ucli/__init__.py
+uclime.egg-info/PKG-INFO
+uclime.egg-info/SOURCES.txt
+uclime.egg-info/dependency_links.txt
+uclime.egg-info/entry_points.txt
+uclime.egg-info/requires.txt
+uclime.egg-info/top_level.txt
+uclime.egg-info/zip-safe

@@ -11,11 +11,15 @@ class UCloudApiConfig(object):
 		self.configParser = configParser
 
 		# the directory use to install the tool
-		self.home = "_ucli"
+		self.home = ".ucli"
 
-		self.configure = "configure.conf"
+		self.configure = "ucloud.cfg"
 		self.ucliConfigPath = os.path.join(self.findConfigPath(), self.home)
 
+
+	def makeConfigDirs(self):
+		if not os.path.exists(self.ucliConfigPath):
+			os.makedirs(self.ucliConfigPath)
 
 	def findConfigPath(self):
 		homePath = ""
@@ -51,6 +55,8 @@ class UCloudApiConfig(object):
 		self.configParser.set("credentials", "public_key", public_key)
 		self.configParser.set("credentials", "private_key", private_key)
 		self.configParser.set("credentials", "project_id", project_id)
+		self.makeConfigDirs()
+		
 		self.configParser.write(open(self.getConfigFileName(), "w"))
 
 

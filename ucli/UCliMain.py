@@ -57,6 +57,9 @@ class UCliMain(object):
 		else:
 			parser.print_help()
 
-if __name__ == '__main__':
+def main():
 	ucli = UCliMain()
 	ucli.main()
+
+if __name__ == '__main__':
+	main()
